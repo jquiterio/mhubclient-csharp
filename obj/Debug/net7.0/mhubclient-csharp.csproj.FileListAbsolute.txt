@@ -1,0 +1,15 @@
+C:\Users\Amand\Documents\SES\mhubclient-csharp\bin\Debug\net7.0\mhubclient-csharp.exe
+C:\Users\Amand\Documents\SES\mhubclient-csharp\bin\Debug\net7.0\mhubclient-csharp.deps.json
+C:\Users\Amand\Documents\SES\mhubclient-csharp\bin\Debug\net7.0\mhubclient-csharp.runtimeconfig.json
+C:\Users\Amand\Documents\SES\mhubclient-csharp\bin\Debug\net7.0\mhubclient-csharp.dll
+C:\Users\Amand\Documents\SES\mhubclient-csharp\bin\Debug\net7.0\mhubclient-csharp.pdb
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.csproj.AssemblyReference.cache
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.AssemblyInfoInputs.cache
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.AssemblyInfo.cs
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.csproj.CoreCompileInputs.cache
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.dll
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\refint\mhubclient-csharp.dll
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.pdb
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\mhubclient-csharp.genruntimeconfig.cache
+C:\Users\Amand\Documents\SES\mhubclient-csharp\obj\Debug\net7.0\ref\mhubclient-csharp.dll
