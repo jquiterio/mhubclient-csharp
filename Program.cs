@@ -66,6 +66,20 @@ namespace MHubClient
             return collection;
         }
 
+        // to publish a message to server (void bc there is no return)
+        public void Publish(string topic, string payload)
+        {
+            // create new Message object
+            Message message = new Message(SubscriberID, topic, payload);
+            var msg = message.ToString();
+            Connect();
+            var bytes = System.Text.Encoding.UTF8.GetBytes(msg);
+            Stream.Write(bytes, 0, bytes.Length);
+            // !todo error handling try catch => close Conn if error
+        }
+
+        
+
 
     }
     class Programs
