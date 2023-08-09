@@ -3,6 +3,7 @@ namespace MHubClient
 {
     using System;
     using System.Net;
+    using System.Security.Cryptography;
     public class Message
     {
         // properties of Message
@@ -45,6 +46,26 @@ namespace MHubClient
             Address == new IPEndPoint(IPAddress.Parse(address), port);
             Debug = Environment.GetEnvironmentVariable("DEBUG") == "true";
         }
+
+        // create X509CertificateCollection for holding certificates (we only have 1 certificate but the SslStream.AuthenticateAsClient method expects a collection) 
+        private static X509CertificateCollection NewTlsConfig()
+        {
+            //load certificate from .pem
+            string certPem = File.ReadAllText("certs/client.pem");
+            X509Certificate2 certificate = new X509Certificate2(Encoding.ASCII.GetBytes(certPem));
+
+            // load private key from .key
+            string keyPem = File.ReadAllText("certs/client.key");
+            using RSA rsa = rsa.Create();
+            rsa.ImportFromPem(keyPem);
+
+            // combine .pem & .key into one object
+            X509Certificate2 certificateWithKey = certificate.CopyWithPrivateKey(rsa);
+            X509CertificateCollection collection = new X509CertificateCollection();
+            collection.Add(certificateWithKey);
+            return collection;
+        }
+
 
     }
     class Programs
